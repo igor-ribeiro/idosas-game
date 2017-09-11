@@ -1,0 +1,26 @@
+.AppSessionInfo {
+  position: relative;
+  width: 100%;
+  z-index: 20;
+  background: #eee;
+  padding: 12px;
+  font-size: .8rem;
+}
+
+.AppSessionInfo-block {
+  margin: 12px 0;
+}
+
+.AppSessionInfo-block:first-child {
+  margin-top: 0;
+}
+
+.AppSessionInfo-block:last-child {
+  margin-bottom: 0;
+}
+
+.AppSessionInfo-label {
+  color: #666;
+  text-transform: uppercase;
+  margin-bottom: 4px;
+}

@@ -1,0 +1,25 @@
+:root {
+  --header-height: 48px;
+}
+
+.AppHeader {
+  height: var(--header-height);
+  background: var(--main-color);
+  color: #fff;
+  padding: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-shrink: 0;
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 20;
+}
+
+.AppHeader-title {
+  font-weight: 700;
+  font-size: 1.2em;
+  letter-spacing: -1px;
+}

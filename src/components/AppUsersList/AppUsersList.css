@@ -1,0 +1,33 @@
+.AppUsersList {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+
+.AppUsersList-user {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  padding: 6px;
+  flex-basis: 50%;
+}
+
+.AppUsersList-user.is-turn {
+  background: var(--main-color);
+  color: #fff;
+  font-weight: 700;
+}
+
+.AppUsersList-user.is-turn .AppUsersList-user-image {
+  background-color: #fff;
+}
+
+.AppUsersList-user-image {
+  width: 32px;
+  height: 32px;
+  background: #aaa;
+  border-radius: 50%;
+  background-position: center center;
+  background-size: cover;
+  margin-right: 5px;
+}

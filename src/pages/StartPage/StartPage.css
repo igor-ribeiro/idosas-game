@@ -1,0 +1,11 @@
+.StartPage {
+  max-width: 300px;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+
+.StartPage-separator {
+  margin: 12px 0;
+  text-transform: uppercase;
+}

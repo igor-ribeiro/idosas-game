@@ -1,0 +1,77 @@
+.GamePage {
+  background: var(--main-color);
+  display: flex;
+  flex-flow: column wrap;
+  /* width: 440px; */
+  pointer-events: none;
+  cursor: not-allowed;
+}
+
+.GamePage.is-turn {
+  pointer-events: initial;
+  cursor: pointer;
+}
+
+.Game-row {
+  display: flex;
+}
+
+.Game-row:first-child .Game-block {
+  margin-top: 0;
+}
+
+.Game-row:last-child .Game-block {
+  margin-bottom: 0;
+}
+
+.Game-block {
+  width: 100px;
+  height: 100px;
+  background: #fff;
+  margin: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 4em;
+  font-weight: 700;
+  color: #333;
+  position: relative;
+}
+
+.Game-block:after {
+  content: attr(data-turn);
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Game-block.is-empty:hover:after {
+  opacity: .4;
+}
+
+.Game-block.is-empty:hover {
+  cursor: pointer;
+  background: #ddd;
+}
+
+.Game-block:first-child {
+  margin-left: 0;
+}
+
+.Game-block:last-child {
+  margin-right: 0;
+}
+
+@media (max-width: 600px) {
+  .Game-block {
+    width: 100px;
+    height: 100px;
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "name": "idosas-game",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "classnames": "^2.2.5",
+    "firebase": "^4.3.1",
+    "react": "next",
+    "react-dom": "next",
+    "react-scripts": "1.0.13",
+    "uuid": "^3.1.0"
+  },
+  "scripts": {
+    "deploy": "yarn build && firebase deploy --only hosting",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}

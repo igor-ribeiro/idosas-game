@@ -1,0 +1,30 @@
+.AppModal {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: rgba(0, 0, 0, .5);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity .3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.AppModal.is-visible {
+  opacity: 1;
+  pointer-events: initial;
+}
+
+.AppModal-box {
+  width: 100%;
+  max-width: 300px;
+  background: #fff;
+  border-radius: 3px;
+  padding: 32px 16px;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}

@@ -1,0 +1,15 @@
+.LoginPage {
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  background: #fff;
+}
+
+.LoginPage-form {
+  flex-flow: column nowrap;
+  display: flex;
+  width: 100%;
+  max-width: 300px;
+  padding: 12px;
+}

@@ -1,0 +1,25 @@
+@keyframes spinner-spin {
+  from {
+    transform: rotateZ(0);
+  }
+
+  to {
+    transform: rotateZ(360deg);
+  }
+}
+
+.AppLoader-spinner {
+  border: 4px solid var(--main-color);
+  width: 60px;
+  height: 60px;
+  border-right-color: transparent;
+  border-radius: 50%;
+  animation-name: spinner-spin;
+  animation-duration: .7s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.AppLoader-text {
+  margin-top: 16px;
+}
